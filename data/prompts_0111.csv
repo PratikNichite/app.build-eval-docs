@@ -1,0 +1,13 @@
+user_prompt|linter_check|type_check|test_check|sql_check|gen_time|tokens_used|gen_success|post_gen_error
+Build a simple web app that suggests if tomorrow's trip to a given city is a good idea, based on open-meteo API's weather forecast for that city|0|1|1|1|-|-|1|0
+Create a simple web app called Plant Care Tracker that lets users track the condition of their plants using fun plant moods based on custom rule-based logic. Avoid using AI, ML, or external APIs|0|1|1|1|-|-|1|0
+Create a Book Swap app where users can list books they want to swap, browse the available books, and request swaps with other members. Make reasonable assumptions about functionalities and appearance of the app and keep the app simple.|0|1|1|1|-|-|1|0
+Make a Roommate Chore Wheel that randomly assigns chores each week and tracks completion.|0|1|1|1|-|-|1|0
+Develop a Medical Clinic Inventory Manager web application. This app should feature a dashboard where clinic staff can upload CSV files containing medicine names, quantities, and expiry dates. The dashboard should then display the current inventory, allow for searching and filtering of medicines, and highlight items nearing their expiry date.|0|1|1|1|-|-|1|0
+Create a web app where users enter monthly income and expenses by category, and the app displays a pie chart of their spending.|0|1|1|1|-|-|0|1
+Create a web app where students post project ideas and recruit classmates to join based on skills.|0|1|1|1|-|-|0|1
+Create a web app that lets users upload a CSV file with student names and their field of interest (Machine Learning, SDE, Data Science, etc.). The app should randomly assign students into teams of 2 people grouped by field. Make assumptions and do not ask more questions.|0|1|1|1|-|-|0|1
+Build a dashboard to monitor car maintenance history and upcoming service dates. |0|1|1|1|-|-|0|1
+Make a simple marketplace for students to buy and sell used furniture.|0|1|1|1|-|-|0|1
+Create a web app where users can add, view, and manage saved passwords with a strength indicator that shows if each password is weak, medium, or strong based on length, complexity, and character variety.|0|1|1|1|-|-|0|1
+Build a currency conversion app that takes an amount, source currency and target currency as input and converts it using the Frankfurter API|0|1|1|1|-|-|-|-
