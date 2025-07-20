@@ -1,0 +1,304 @@
+2025-07-17 08:55:13,787 - INFO - api.snapshot_utils - unk - snapshot_utils.py:36 - Saving snapshots disabled. No bucket name provided.
+2025-07-17 08:55:14 PratikLN api.agent_server.agent_client[27919] INFO No auth token available for authorization
+2025-07-17 08:55:14 PratikLN api.agent_server.async_server[27919] INFO No token configured, skipping authentication
+2025-07-17 08:55:14 PratikLN api.agent_server.async_server[27919] INFO Received message request for application test-bot-36c9b697, trace 2d9acbb0760d4ade91d26588510a1642
+2025-07-17 08:55:14 PratikLN api.agent_server.async_server[27919] INFO Starting SSE stream for application
+2025-07-17 08:55:14 PratikLN api.agent_server.async_server[27919] INFO Using template: nicegui_agent
+2025-07-17 08:55:14 PratikLN api.agent_server.async_server[27919] INFO Running agent for session test-bot-36c9b697:2d9acbb0760d4ade91d26588510a1642
+2025-07-17 08:55:14 PratikLN api.agent_server.async_server[27919] INFO Creating new agent session for test-bot-36c9b697:2d9acbb0760d4ade91d26588510a1642
+2025-07-17 08:55:14 PratikLN api.base_agent_session[27919] INFO Processing request for test-bot-36c9b697:2d9acbb0760d4ade91d26588510a1642
+2025-07-17 08:55:14 PratikLN api.base_agent_session[27919] INFO Initializing new session for trace 2d9acbb0760d4ade91d26588510a1642
+2025-07-17 08:55:14 PratikLN api.base_agent_session[27919] INFO Last user message: [TextRaw(text='Build a dashboard to monitor my car’s maintenance history and upcoming service dates. Make assumptions, no more questions please.')]
+2025-07-17 08:55:14 PratikLN llm.utils[27919] INFO Auto-detected backend: gemini
+2025-07-17 08:55:15 PratikLN llm.cached[27919] INFO Inferred cache mode lru
+2025-07-17 08:55:15 PratikLN llm.cached[27919] INFO loading lru cache from: /mnt/c/Users/Pratik/Desktop/projects/AppBuild/agent/llm/caches/272bc3a87d329ea03da98685a95c69d1.json
+2025-07-17 08:55:15 PratikLN llm.utils[27919] INFO Auto-detected backend: gemini
+2025-07-17 08:55:15 PratikLN llm.cached[27919] INFO Inferred cache mode lru
+2025-07-17 08:55:15 PratikLN llm.cached[27919] INFO loading lru cache from: /mnt/c/Users/Pratik/Desktop/projects/AppBuild/agent/llm/caches/4f7b1d637bdf7c038af831b7b3afbfbc.json
+2025-07-17 08:55:15 PratikLN api.base_agent_session[27919] INFO Looping into next step
+2025-07-17 08:55:15 PratikLN llm.cached[27919] INFO lru cache miss: a35ae6fcfba449000c8e997666f96557
+2025-07-17 08:55:17 PratikLN api.fsm_tools[27919] INFO Starting new FSM session with description: 
+Build a web-based dashboard application using Python and NiceGUI to monitor car maintenance history and upcoming service dates.
+The application should allow users to:
+1. Add new car maintenance records.
+2. View a list of all maintenance records.
+3. Edit existing maintenance records.
+4. Delete maintenance records.
+
+Each maintenance record should include the following fields:
+- Car Make (text)
+- Car Model (text)
+- Car Year (integer)
+- Service Type (text, e.g., "Oil Change", "Tire Rotation", "Brake Inspection")
+- Service Date (date)
+- Mileage (integer)
+- Notes (text, optional)
+
+The dashboard should prominently display upcoming service dates. Assume a configurable reminder period (e.g., 30 days) for upcoming services.
+The application will use PostgreSQL for persistent data storage, managed with SQLModel ORM.
+
+2025-07-17 08:55:17 PratikLN llm.utils[27919] INFO Auto-detected backend: anthropic
+2025-07-17 08:55:17 PratikLN llm.cached[27919] INFO Inferred cache mode lru
+2025-07-17 08:55:17 PratikLN llm.cached[27919] INFO loading lru cache from: /mnt/c/Users/Pratik/Desktop/projects/AppBuild/agent/llm/caches/b5afd28cb246d612bc8da048c0ac053a.json
+2025-07-17 08:55:17 PratikLN core.actors[27919] INFO Initialized NiceguiActor with beam_width=3, max_depth=50
+2025-07-17 08:55:17 PratikLN core.actors[27919] INFO Initialized NiceguiActor with beam_width=3, max_depth=100
+2025-07-17 08:55:17 PratikLN core.statemachine[27919] INFO Processing transition: [] FSMState.DATA_MODEL_GENERATION
+2025-07-17 08:55:17 PratikLN api.base_agent_session[27919] INFO Emitting intermediate message: ┃ ⎿  🚀 Starting NiceGUI application generation...
+2025-07-17 08:55:17 PratikLN nicegui_agent.actors[27919] INFO Start NiceguiActor execution with files: dict_keys([])
+2025-07-17 08:55:17 PratikLN nicegui_agent.actors[27919] INFO Selected 1 leaf nodes for evaluation
+2025-07-17 08:55:17 PratikLN api.base_agent_session[27919] INFO Emitting intermediate message: 🔄 Working on implementation (step 1)...
+2025-07-17 08:55:17 PratikLN nicegui_agent.actors[27919] INFO Iteration 1: Running LLM on 1 candidates
+2025-07-17 08:55:17 PratikLN llm.cached[27919] INFO lru cache miss: b4392a6c4f8c0512e58af91a71ca3fb0
+2025-07-17 08:55:40 PratikLN nicegui_agent.actors[27919] INFO Received 1 nodes from LLM
+2025-07-17 08:55:40 PratikLN nicegui_agent.actors[27919] INFO Evaluating node 1/1
+2025-07-17 08:55:40 PratikLN core.actors[27919] INFO Running tools for node 8732872e6692415c9e643e09bfd34c25
+2025-07-17 08:55:40 PratikLN core.actors[27919] INFO LLM output: I'll implement the data models for the car maintenance dashboard application. Let me create the SQLModel classes for the maintenance records and related schemas.
+2025-07-17 08:55:40 PratikLN core.actors[27919] INFO Running tool write_file with input path: app/models.py, content: from sqlmodel import SQLModel, Field, Column, JSON...
+2025-07-17 08:55:40 PratikLN nicegui_agent.actors[27919] INFO Selected 1 leaf nodes for evaluation
+2025-07-17 08:55:40 PratikLN api.base_agent_session[27919] INFO Emitting intermediate message: 🔄 Working on implementation (step 2)...
+2025-07-17 08:55:40 PratikLN nicegui_agent.actors[27919] INFO Iteration 2: Running LLM on 1 candidates
+2025-07-17 08:55:40 PratikLN llm.cached[27919] INFO lru cache miss: 8f3484a3f5b6db46b6505f7ea3a25e9b
+2025-07-17 08:55:42 PratikLN nicegui_agent.actors[27919] INFO Received 1 nodes from LLM
+2025-07-17 08:55:42 PratikLN nicegui_agent.actors[27919] INFO Evaluating node 1/1
+2025-07-17 08:55:42 PratikLN core.actors[27919] INFO Running tools for node 54e9c787ba82456fbfba0ae4edda851b
+2025-07-17 08:55:42 PratikLN core.actors[27919] INFO Running tool complete with input 
+2025-07-17 08:55:42 PratikLN api.base_agent_session[27919] INFO Emitting intermediate message: ┃ ⎿  🔍 Running validation checks...
+2025-07-17 08:55:48 PratikLN api.base_agent_session[27919] INFO Emitting intermediate message: ┃ ⎿  ✓ ✅ All validation checks passed
+2025-07-17 08:55:48 PratikLN nicegui_agent.actors[27919] INFO Found solution at depth 2
+2025-07-17 08:55:48 PratikLN api.base_agent_session[27919] INFO Emitting intermediate message: ┃ ⎿  ✓ ✅ NiceGUI application generated successfully
+2025-07-17 08:55:48 PratikLN nicegui_agent.application[27919] INFO Updating context files from result
+2025-07-17 08:55:48 PratikLN nicegui_agent.application[27919] INFO Running final steps after application generation
+2025-07-17 08:55:49 PratikLN core.statemachine[27919] INFO Processing transition: [<FSMState.DATA_MODEL_GENERATION: 'data_model_generation'>] FSMState.REVIEW_DATA_MODEL
+2025-07-17 08:55:49 PratikLN api.fsm_tools[27919] INFO First FSM stage completed successfully
+2025-07-17 08:55:49 PratikLN api.fsm_tools[27919] INFO Tool call: start_fsm with input: {'app_description': '\nBuild a web-based dashboard application using Python and NiceGUI to monitor car maintenance history and upcoming service dates.\nThe application should allow users to:\n1. Add new car maintenance records.\n2. View a list of all maintenance records.\n3. Edit existing maintenance records.\n4. Delete maintenance records.\n\nEach maintenance record should include the following fields:\n- Car Make (text)\n- Car Model (text)\n- Car Year (integer)\n- Service Type (text, e.g., "Oil Change", "Tire Rotation", "Brake Inspection")\n- Service Date (date)\n- Mileage (integer)\n- Notes (text, optional)\n\nThe dashboard should prominently display upcoming service dates. Assume a configurable reminder period (e.g., 30 days) for upcoming services.\nThe application will use PostgreSQL for persistent data storage, managed with SQLModel ORM.\n'}
+2025-07-17 08:55:49 PratikLN api.base_agent_session[27919] INFO Saving FSM state
+2025-07-17 08:55:49 PratikLN llm.llm_generators[27919] INFO Generating app name from prompt: 
+Build a web-based dashboard application using Pyt...
+2025-07-17 08:55:49 PratikLN llm.cached[27919] INFO lru cache miss: 5016bd7e58a18f1d81a56c581191ee56
+2025-07-17 08:55:49 PratikLN llm.llm_generators[27919] INFO Generated app name: car-maintenance-dashboard
+2025-07-17 08:55:49 PratikLN api.base_agent_session[27919] INFO Getting initial template diff
+2025-07-17 08:55:49 PratikLN nicegui_agent.application[27919] INFO SERVER get_diff_with: Received snapshot with 0 files.
+2025-07-17 08:55:49 PratikLN nicegui_agent.application[27919] INFO SERVER get_diff_with: Snapshot is empty. Diff will be against template + FSM context files.
+2025-07-17 08:55:49 PratikLN nicegui_agent.application[27919] INFO SERVER get_diff_with: Added template directory to workspace
+2025-07-17 08:55:49 PratikLN nicegui_agent.application[27919] INFO SERVER get_diff_with: Calling workspace.diff() to generate final diff.
+2025-07-17 08:55:50 PratikLN nicegui_agent.application[27919] INFO SERVER get_diff_with: workspace.diff() Succeeded. Diff length: 22061
+2025-07-17 08:55:50 PratikLN api.base_agent_session[27919] INFO Sending initial template diff
+2025-07-17 08:55:50 PratikLN api.base_agent_session[27919] INFO Got WIP status, skipping sending event due to callback messages were already sent
+2025-07-17 08:55:50 PratikLN api.base_agent_session[27919] INFO Looping into next step
+2025-07-17 08:55:50 PratikLN llm.cached[27919] INFO lru cache miss: 31d182cfe74e810f12a81b7cbb071a7d
+2025-07-17 08:55:52 PratikLN api.fsm_tools[27919] INFO LLM Message:  The `start_fsm` tool was called with a detailed application description. The `start_fsm_response` indicates that the FSM has transitioned to the `review_data_model` state and has generated initial data models. The `data_models` output includes `app/models.py` and `requirements.txt`. I need to review these generated files to ensure they align with the requirements.
+
+I will first review the `app/models.py` file to verify that the `MaintenanceRecord` model includes all the specified fields: Car Make, Car Model, Car Year, Service Type, Service Date, Mileage, and Notes. I will also check the data types and any default values or constraints.
+
+Next, I will examine `requirements.txt` to confirm that it contains the necessary dependencies, such as `sqlmodel`, `nicegui`, and `psycopg2-binary` for PostgreSQL connectivity.
+
+After reviewing, I will either confirm the state if the models are accurate or provide feedback for any necessary changes using the `change` tool.
+
+I will confirm the current state. The generated data models are accurate and align with the specified requirements. The `MaintenanceRecord` model correctly includes fields for Car Make, Car Model, Car Year, Service Type, Service Date, Mileage, and Notes, with appropriate data types. The `requirements.txt` also contains the necessary dependencies for the application.
+2025-07-17 08:55:52 PratikLN api.fsm_tools[27919] INFO Current state before confirmation: FSMState.REVIEW_DATA_MODEL
+2025-07-17 08:55:52 PratikLN api.fsm_tools[27919] INFO Confirming current state
+2025-07-17 08:55:52 PratikLN core.statemachine[27919] INFO Processing transition: [<FSMState.REVIEW_DATA_MODEL: 'review_data_model'>] FSMState.APPLICATION_GENERATION
+2025-07-17 08:55:52 PratikLN api.base_agent_session[27919] INFO Emitting intermediate message: ┃ ⎿  🚀 Starting NiceGUI application generation...
+2025-07-17 08:55:52 PratikLN nicegui_agent.actors[27919] INFO Start NiceguiActor execution with files: dict_keys(['app/models.py'])
+2025-07-17 08:55:52 PratikLN nicegui_agent.actors[27919] INFO Selected 1 leaf nodes for evaluation
+2025-07-17 08:55:52 PratikLN api.base_agent_session[27919] INFO Emitting intermediate message: 🔄 Working on implementation (step 1)...
+2025-07-17 08:55:52 PratikLN nicegui_agent.actors[27919] INFO Iteration 1: Running LLM on 1 candidates
+2025-07-17 08:55:52 PratikLN llm.cached[27919] INFO lru cache miss: 6d64e6d39aa548726c5538b72fa6d74e
+2025-07-17 08:55:58 PratikLN nicegui_agent.actors[27919] INFO Received 1 nodes from LLM
+2025-07-17 08:55:58 PratikLN nicegui_agent.actors[27919] INFO Evaluating node 1/1
+2025-07-17 08:55:58 PratikLN core.actors[27919] INFO Running tools for node 191cd680cf5241e2a64e5527fadbf66a
+2025-07-17 08:55:58 PratikLN core.actors[27919] INFO LLM output: I'll build a comprehensive car maintenance dashboard application using NiceGUI. Let me start by examining the existing files to understand the current structure.
+2025-07-17 08:55:58 PratikLN core.actors[27919] INFO Running tool read_file with input path: app/models.py
+2025-07-17 08:55:58 PratikLN nicegui_agent.actors[27919] INFO Selected 1 leaf nodes for evaluation
+2025-07-17 08:55:58 PratikLN api.base_agent_session[27919] INFO Emitting intermediate message: 🔄 Working on implementation (step 2)...
+2025-07-17 08:55:58 PratikLN nicegui_agent.actors[27919] INFO Iteration 2: Running LLM on 1 candidates
+2025-07-17 08:55:58 PratikLN llm.cached[27919] INFO lru cache miss: db0c6030ce47c236c502fa8e9112995d
+2025-07-17 08:56:00 PratikLN nicegui_agent.actors[27919] INFO Received 1 nodes from LLM
+2025-07-17 08:56:00 PratikLN nicegui_agent.actors[27919] INFO Evaluating node 1/1
+2025-07-17 08:56:00 PratikLN core.actors[27919] INFO Running tools for node 633c53dda7e344898a8c397dba9f8d3b
+2025-07-17 08:56:00 PratikLN core.actors[27919] INFO Running tool read_file with input path: app/database.py
+2025-07-17 08:56:00 PratikLN nicegui_agent.actors[27919] INFO Selected 1 leaf nodes for evaluation
+2025-07-17 08:56:00 PratikLN api.base_agent_session[27919] INFO Emitting intermediate message: 🔄 Working on implementation (step 3)...
+2025-07-17 08:56:00 PratikLN nicegui_agent.actors[27919] INFO Iteration 3: Running LLM on 1 candidates
+2025-07-17 08:56:00 PratikLN llm.cached[27919] INFO lru cache miss: d6d6ea6ca0d958e6594421d9efbfea99
+2025-07-17 08:56:03 PratikLN nicegui_agent.actors[27919] INFO Received 1 nodes from LLM
+2025-07-17 08:56:03 PratikLN nicegui_agent.actors[27919] INFO Evaluating node 1/1
+2025-07-17 08:56:03 PratikLN core.actors[27919] INFO Running tools for node 0a637d8b3a2d4ff6984f9d42dc64af93
+2025-07-17 08:56:03 PratikLN core.actors[27919] INFO Running tool read_file with input path: app/startup.py
+2025-07-17 08:56:03 PratikLN nicegui_agent.actors[27919] INFO Selected 1 leaf nodes for evaluation
+2025-07-17 08:56:03 PratikLN api.base_agent_session[27919] INFO Emitting intermediate message: 🔄 Working on implementation (step 4)...
+2025-07-17 08:56:03 PratikLN nicegui_agent.actors[27919] INFO Iteration 4: Running LLM on 1 candidates
+2025-07-17 08:56:03 PratikLN llm.cached[27919] INFO lru cache miss: d2a47dc46ee0287be14105fe6be11748
+2025-07-17 08:56:25 PratikLN nicegui_agent.actors[27919] INFO Received 1 nodes from LLM
+2025-07-17 08:56:25 PratikLN nicegui_agent.actors[27919] INFO Evaluating node 1/1
+2025-07-17 08:56:25 PratikLN core.actors[27919] INFO Running tools for node affcbf93d49d42768620af00056ced3b
+2025-07-17 08:56:25 PratikLN core.actors[27919] INFO LLM output: Now I'll create the car maintenance dashboard application. Let me start with the core services for managing maintenance records.
+2025-07-17 08:56:25 PratikLN core.actors[27919] INFO Running tool write_file with input path: app/services.py, content: from datetime import date, datetime, timedelta
+fro...
+2025-07-17 08:56:25 PratikLN nicegui_agent.actors[27919] INFO Selected 1 leaf nodes for evaluation
+2025-07-17 08:56:25 PratikLN api.base_agent_session[27919] INFO Emitting intermediate message: 🔄 Working on implementation (step 5)...
+2025-07-17 08:56:25 PratikLN nicegui_agent.actors[27919] INFO Iteration 5: Running LLM on 1 candidates
+2025-07-17 08:56:25 PratikLN llm.cached[27919] INFO lru cache miss: 65a3f367489dc3f7ea217516d6a73a54
+2025-07-17 08:57:28 PratikLN nicegui_agent.actors[27919] INFO Received 1 nodes from LLM
+2025-07-17 08:57:28 PratikLN nicegui_agent.actors[27919] INFO Evaluating node 1/1
+2025-07-17 08:57:28 PratikLN core.actors[27919] INFO Running tools for node cc9d11fef60a4491a54da2499865748d
+2025-07-17 08:57:28 PratikLN core.actors[27919] INFO LLM output: Now I'll create the main dashboard module:
+2025-07-17 08:57:28 PratikLN core.actors[27919] INFO Running tool write_file with input path: app/dashboard.py, content: from datetime import date, datetime
+from typing im...
+2025-07-17 08:57:28 PratikLN nicegui_agent.actors[27919] INFO Selected 1 leaf nodes for evaluation
+2025-07-17 08:57:28 PratikLN api.base_agent_session[27919] INFO Emitting intermediate message: 🔄 Working on implementation (step 6)...
+2025-07-17 08:57:28 PratikLN nicegui_agent.actors[27919] INFO Iteration 6: Running LLM on 1 candidates
+2025-07-17 08:57:28 PratikLN llm.cached[27919] INFO lru cache miss: c812970bc917689012e9a6f63c16e174
+2025-07-17 08:57:36 PratikLN nicegui_agent.actors[27919] INFO Received 1 nodes from LLM
+2025-07-17 08:57:36 PratikLN nicegui_agent.actors[27919] INFO Evaluating node 1/1
+2025-07-17 08:57:36 PratikLN core.actors[27919] INFO Running tools for node 79a5f040d6e64e9897ea69b5a7cede98
+2025-07-17 08:57:36 PratikLN core.actors[27919] INFO LLM output: Now I'll update the startup.py file to include the dashboard:
+2025-07-17 08:57:36 PratikLN core.actors[27919] INFO Running tool edit_file with input path: app/startup.py, search: from app.database import create_tables
+from nicegu..., replace: from app.database import create_tables
+import app....
+2025-07-17 08:57:36 PratikLN nicegui_agent.actors[27919] INFO Selected 1 leaf nodes for evaluation
+2025-07-17 08:57:36 PratikLN api.base_agent_session[27919] INFO Emitting intermediate message: 🔄 Working on implementation (step 7)...
+2025-07-17 08:57:36 PratikLN nicegui_agent.actors[27919] INFO Iteration 7: Running LLM on 1 candidates
+2025-07-17 08:57:36 PratikLN llm.cached[27919] INFO lru cache miss: 696174560f723c53282dfce9a9137169
+2025-07-17 08:58:26 PratikLN nicegui_agent.application[27919] ERROR Setting error in context:
+  + Exception Group Traceback (most recent call last):
+  |   File "/mnt/c/Users/Pratik/Desktop/projects/AppBuild/agent/core/statemachine.py", line 138, in _run_invoke
+  |     event = await invoke["src"].execute(*args)
+  |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |   File "/mnt/c/Users/Pratik/Desktop/projects/AppBuild/agent/nicegui_agent/actors.py", line 90, in execute
+  |     nodes = await self.run_llm(
+  |             ^^^^^^^^^^^^^^^^^^^
+  |   File "/mnt/c/Users/Pratik/Desktop/projects/AppBuild/agent/core/actors.py", line 123, in run_llm
+  |     async with anyio.create_task_group() as tg:
+  |   File "/mnt/c/Users/Pratik/Desktop/projects/AppBuild/agent/.venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 772, in __aexit__
+  |     raise BaseExceptionGroup(
+  | ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "/mnt/c/Users/Pratik/Desktop/projects/AppBuild/agent/core/actors.py", line 111, in node_fn
+    |     await loop_completion(
+    |   File "/mnt/c/Users/Pratik/Desktop/projects/AppBuild/agent/llm/utils.py", line 50, in loop_completion
+    |     completion = await m_client.completion(messages=payload, system_prompt=system_prompt, **kwargs)
+    |                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/mnt/c/Users/Pratik/Desktop/projects/AppBuild/agent/llm/cached.py", line 281, in completion
+    |     return await self._get_or_make_request(cache_key, norm_params, request_params, use_lru=True)
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/mnt/c/Users/Pratik/Desktop/projects/AppBuild/agent/llm/cached.py", line 227, in _get_or_make_request
+    |     response = await self.client.completion(**safe_request_params)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/mnt/c/Users/Pratik/Desktop/projects/AppBuild/agent/llm/anthropic_client.py", line 89, in completion
+    |     return await self._create_message_with_retry(call_args)
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/mnt/c/Users/Pratik/Desktop/projects/AppBuild/agent/.venv/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 189, in async_wrapped
+    |     return await copy(fn, *args, **kwargs)
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/mnt/c/Users/Pratik/Desktop/projects/AppBuild/agent/.venv/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 111, in __call__
+    |     do = await self.iter(retry_state=retry_state)
+    |          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/mnt/c/Users/Pratik/Desktop/projects/AppBuild/agent/.venv/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 153, in iter
+    |     result = await action(retry_state)
+    |              ^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/mnt/c/Users/Pratik/Desktop/projects/AppBuild/agent/.venv/lib/python3.12/site-packages/tenacity/_utils.py", line 99, in inner
+    |     return call(*args, **kwargs)
+    |            ^^^^^^^^^^^^^^^^^^^^^
+    |   File "/mnt/c/Users/Pratik/Desktop/projects/AppBuild/agent/.venv/lib/python3.12/site-packages/tenacity/__init__.py", line 400, in <lambda>
+    |     self._add_action_func(lambda rs: rs.outcome.result())
+    |                                      ^^^^^^^^^^^^^^^^^^^
+    |   File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    |     return self.__get_result()
+    |            ^^^^^^^^^^^^^^^^^^^
+    |   File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    |     raise self._exception
+    |   File "/mnt/c/Users/Pratik/Desktop/projects/AppBuild/agent/.venv/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 114, in __call__
+    |     result = await fn(*args, **kwargs)
+    |              ^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/mnt/c/Users/Pratik/Desktop/projects/AppBuild/agent/llm/anthropic_client.py", line 93, in _create_message_with_retry
+    |     completion = await self.client.messages.create(**call_args)
+    |                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/mnt/c/Users/Pratik/Desktop/projects/AppBuild/agent/.venv/lib/python3.12/site-packages/anthropic/resources/messages/messages.py", line 2165, in create
+    |     return await self._post(
+    |            ^^^^^^^^^^^^^^^^^
+    |   File "/mnt/c/Users/Pratik/Desktop/projects/AppBuild/agent/.venv/lib/python3.12/site-packages/anthropic/_base_client.py", line 1920, in post
+    |     return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/mnt/c/Users/Pratik/Desktop/projects/AppBuild/agent/.venv/lib/python3.12/site-packages/anthropic/_base_client.py", line 1614, in request
+    |     return await self._request(
+    |            ^^^^^^^^^^^^^^^^^^^^
+    |   File "/mnt/c/Users/Pratik/Desktop/projects/AppBuild/agent/.venv/lib/python3.12/site-packages/anthropic/_base_client.py", line 1700, in _request
+    |     return await self._retry_request(
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/mnt/c/Users/Pratik/Desktop/projects/AppBuild/agent/.venv/lib/python3.12/site-packages/anthropic/_base_client.py", line 1747, in _retry_request
+    |     return await self._request(
+    |            ^^^^^^^^^^^^^^^^^^^^
+    |   File "/mnt/c/Users/Pratik/Desktop/projects/AppBuild/agent/.venv/lib/python3.12/site-packages/anthropic/_base_client.py", line 1700, in _request
+    |     return await self._retry_request(
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/mnt/c/Users/Pratik/Desktop/projects/AppBuild/agent/.venv/lib/python3.12/site-packages/anthropic/_base_client.py", line 1747, in _retry_request
+    |     return await self._request(
+    |            ^^^^^^^^^^^^^^^^^^^^
+    |   File "/mnt/c/Users/Pratik/Desktop/projects/AppBuild/agent/.venv/lib/python3.12/site-packages/anthropic/_base_client.py", line 1715, in _request
+    |     raise self._make_status_error_from_response(err.response) from None
+    | anthropic.RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'rate_limit_error', 'message': 'This request would exceed the rate limit for your organization (4c11aaf1-4681-4216-b47b-bf279c53a1eb) of 20,000 input tokens per minute. For details, refer to: https://docs.anthropic.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.'}}
+    +------------------------------------
+2025-07-17 08:58:27 PratikLN core.statemachine[27919] INFO Processing transition: [<FSMState.APPLICATION_GENERATION: 'application_generation'>] FSMState.FAILURE
+2025-07-17 08:58:27 PratikLN api.fsm_tools[27919] INFO Tool call: confirm_state with input: {}
+2025-07-17 08:58:27 PratikLN api.base_agent_session[27919] INFO Saving FSM state
+2025-07-17 08:58:27 PratikLN api.base_agent_session[27919] INFO Got FAILED status, sending runtime error message
+2025-07-17 08:58:27 PratikLN api.agent_server.async_server[27919] INFO Agent idle, will clean up session for test-bot-36c9b697:2d9acbb0760d4ade91d26588510a1642 when all events are processed
+2025-07-17 08:58:27 PratikLN api.agent_server.async_server[27919] INFO Cleaning up completed agent session for test-bot-36c9b697:2d9acbb0760d4ade91d26588510a1642
+2025-07-17 08:58:27 PratikLN tests.test_e2e[27919] INFO Generated app_name: car-maintenance-dashboard
+2025-07-17 08:58:27 PratikLN tests.test_e2e[27919] INFO Generated commit_message: Initial commit
+2025-07-17 08:58:27 PratikLN api.agent_server.agent_client[27919] INFO No auth token available for authorization
+2025-07-17 08:58:27 PratikLN api.agent_server.async_server[27919] INFO No token configured, skipping authentication
+2025-07-17 08:58:27 PratikLN api.agent_server.async_server[27919] INFO Received message request for application test-bot-36c9b697, trace 2d9acbb0760d4ade91d26588510a1642
+2025-07-17 08:58:27 PratikLN api.agent_server.async_server[27919] INFO Starting SSE stream for application
+2025-07-17 08:58:27 PratikLN api.agent_server.async_server[27919] INFO Using template: nicegui_agent
+2025-07-17 08:58:27 PratikLN api.agent_server.async_server[27919] INFO Running agent for session test-bot-36c9b697:2d9acbb0760d4ade91d26588510a1642
+2025-07-17 08:58:29 PratikLN api.agent_server.async_server[27919] INFO Creating new agent session for test-bot-36c9b697:2d9acbb0760d4ade91d26588510a1642
+2025-07-17 08:58:29 PratikLN api.base_agent_session[27919] INFO Processing request for test-bot-36c9b697:2d9acbb0760d4ade91d26588510a1642
+2025-07-17 08:58:29 PratikLN api.base_agent_session[27919] INFO Initializing new session for trace 2d9acbb0760d4ade91d26588510a1642
+2025-07-17 08:58:29 PratikLN api.base_agent_session[27919] INFO Last user message: [TextRaw(text='Add message with emojis to the app to make it more fun')]
+2025-07-17 08:58:29 PratikLN llm.utils[27919] INFO Auto-detected backend: gemini
+2025-07-17 08:58:29 PratikLN llm.utils[27919] INFO Auto-detected backend: gemini
+2025-07-17 08:58:29 PratikLN api.base_agent_session[27919] INFO Looping into next step
+2025-07-17 08:58:29 PratikLN llm.cached[27919] INFO lru cache miss: be7cafae94930878f4fe6e0d5fa644ed
+2025-07-17 08:58:30 PratikLN api.fsm_tools[27919] INFO LLM Message: Could you please provide more details about the application you'd like to build? What is its purpose, and what features should it include? Also, where would you like this message with emojis to be displayed within the application? For example, should it be a greeting on the main page, a notification, or part of a chat interface?
+2025-07-17 08:58:30 PratikLN api.base_agent_session[27919] INFO Got REFINEMENT_REQUEST status, sending refinement request message
+2025-07-17 08:58:30 PratikLN api.agent_server.async_server[27919] INFO Agent idle, will clean up session for test-bot-36c9b697:2d9acbb0760d4ade91d26588510a1642 when all events are processed
+Traceback (most recent call last):
+  File "/mnt/c/Users/Pratik/Desktop/projects/AppBuild/agent/.venv/bin/generate", line 10, in <module>
+    sys.exit(generate())
+             ^^^^^^^^^^
+  File "/mnt/c/Users/Pratik/Desktop/projects/AppBuild/agent/commands.py", line 80, in generate
+    return Fire(_generate)
+           ^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/Pratik/Desktop/projects/AppBuild/agent/.venv/lib/python3.12/site-packages/fire/core.py", line 135, in Fire
+    component_trace = _Fire(component, args, parsed_flag_args, context, name)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/Pratik/Desktop/projects/AppBuild/agent/.venv/lib/python3.12/site-packages/fire/core.py", line 468, in _Fire
+    component, remaining_args = _CallAndUpdateTrace(
+                                ^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/Pratik/Desktop/projects/AppBuild/agent/.venv/lib/python3.12/site-packages/fire/core.py", line 684, in _CallAndUpdateTrace
+    component = fn(*varargs, **kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/Pratik/Desktop/projects/AppBuild/agent/commands.py", line 88, in _generate
+    anyio.run(run_e2e, prompt, True, with_edit, template_id)
+  File "/mnt/c/Users/Pratik/Desktop/projects/AppBuild/agent/.venv/lib/python3.12/site-packages/anyio/_core/_eventloop.py", line 74, in run
+    return async_backend.run(func, args, {}, backend_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/Pratik/Desktop/projects/AppBuild/agent/.venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2310, in run
+    return runner.run(wrapper())
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/Pratik/Desktop/projects/AppBuild/agent/.venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2298, in wrapper
+    return await func(*args)
+           ^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/Pratik/Desktop/projects/AppBuild/agent/tests/test_e2e.py", line 85, in run_e2e
+    assert updated_diff, "No diff was generated in the agent response after edit"
+           ^^^^^^^^^^^^
+AssertionError: No diff was generated in the agent response after edit
