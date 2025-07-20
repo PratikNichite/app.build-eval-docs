@@ -1,6 +1,6 @@
-,prompt_id,log_file,start_time,end_time,gen_time,build_status
-0,1,prompt_1.log,2025-07-15 17:59:33,2025-07-15 18:07:39,8min 06sec,success
-1,2,prompt_2.log,2025-07-15 21:09:07,2025-07-15 21:24:20,15min 13sec,success
-2,3,prompt_3.log,2025-07-15 21:40:43,2025-07-15 21:58:17,17min 34sec,success
-3,4,prompt_4.log,2025-07-15 23:30:09,2025-07-16 00:21:09,51min 00sec,success
-4,7,prompt_7.log,2025-07-17 09:13:40,2025-07-17 09:17:47,4min 07sec,fail
+,prompt_id,log_file,start_time,end_time,gen_time,build_status,post_build_error
+0,1,prompt_1.log,2025-07-15 17:59:33,2025-07-15 18:07:39,8min 06sec,success,False
+1,2,prompt_2.log,2025-07-15 21:09:07,2025-07-15 21:24:20,15min 13sec,success,False
+2,3,prompt_3.log,2025-07-15 21:40:43,2025-07-15 21:58:17,17min 34sec,success,False
+3,4,prompt_4.log,2025-07-15 23:30:09,2025-07-16 00:21:09,51min 00sec,success,False
+4,7,prompt_7.log,2025-07-17 09:13:40,2025-07-17 09:17:47,4min 07sec,fail,True

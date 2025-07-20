@@ -20,13 +20,25 @@ class LogExtractor:
         ]
         
         timestamps = []
+        assertion_error = False
+        emoji_message = False
+        deployed_message = False
         
         try:
             with open(self.log_file_path, 'r', encoding='utf-8') as file:
                 for line_num, line in enumerate(file, 1):
                     for pattern in timestamp_patterns:
                         matches = re.findall(pattern, line)
+                        if line.strip().startswith("AssertionError"):
+                            assertion_error = True
+                        elif line.strip().startswith("App is running on"):
+                            deployed_message = True
+                            
                         for match in matches:
+                            if line.strip().endswith("Last user message: [TextRaw(text='Add message with emojis to the app to make it more fun')]"):
+                                emoji_message = True
+                            
+                                
                             timestamps.append({
                                 'timestamp': match,
                                 'line_number': line_num,
@@ -41,11 +53,11 @@ class LogExtractor:
             print(f"Error reading file: {e}")
             return []
             
-        return timestamps
+        return timestamps, deployed_message, assertion_error and emoji_message
     
     def get_start_end_times(self) -> Tuple[Optional[str], Optional[str]]:
         """Get the first and last timestamps from the log"""
-        timestamps = self.extract_timestamps()
+        timestamps, _, _2 = self.extract_timestamps()
         
         if not timestamps:
             return None, None
@@ -57,15 +69,15 @@ class LogExtractor:
     
     def extract_log_data(self) -> Dict:
         """Extract comprehensive log data including timestamps and metadata"""
-        timestamps = self.extract_timestamps()
+        timestamps, deployed_message, post_build_error = self.extract_timestamps()
         
         if not timestamps:
             return {
                 'start_time': None,
                 'end_time': None,
-                'total_lines': 0,
                 'duration': None,
-                'build_status': 'fail',
+                'build_status': None,
+                'post_build_error': None,
             }
         
         start_time = timestamps[0]['timestamp']
@@ -73,13 +85,14 @@ class LogExtractor:
         
         duration = self._calculate_duration(start_time, end_time)
         
-        app_build_status = 'success' if timestamps[-1]['full_line'].startswith("App is running on") else 'fail'
+        app_build_status = 'success' if deployed_message and not post_build_error else 'fail'
         
         return {
             'start_time': start_time,
             'end_time': end_time,
             'duration': duration,
             'build_status': app_build_status,
+            'post_build_error': post_build_error,
         }
     
     def _calculate_duration(self, start_time: str, end_time: str) -> Optional[str]:
@@ -205,6 +218,7 @@ def process_folder_logs(source_folder: str, destination_folder: str) -> pd.DataF
             'end_time': log_data['end_time'],
             'gen_time': log_data['duration'],
             'build_status': log_data['build_status'],
+            'post_build_error': log_data['post_build_error'],
         }
         
         results.append(result)
