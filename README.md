@@ -13,7 +13,7 @@ Our goal is to ensure the agent consistently delivers reliable, high-quality, an
 - Each log file is named as `prompt_[prompt_id].log`, e.g. -> prompt_1.log
 
 #### 2. Log extraction code:
-- Important to extract code out of log files.
+- Important to extract information out of log files.
 - It lives in the root directory with the name `code.ipynb`.
 - Behind the scene it uses another python script that has all the underlying code for extracting information out of log files.
 - This underlying python script is named as `extract_log_data.py`.
