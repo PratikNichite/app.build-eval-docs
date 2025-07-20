@@ -17,3 +17,17 @@ Prompt 8: Create Crypto Portfolio Manager with the CoinGecko API: on startup it 
 Prompt 9: Create a Movie Watchlist CRUD Flask app that leverages the TMDB API: the homepage lists all movies you’ve saved (title, poster thumbnail, status), there’s a search form calling TMDB to find new titles by keyword, and each result has an “Add” button that inserts it into your local SQLite watchlist. From the list view you can click “Edit” to update your status (Planned, Watching, Completed) or “Delete” to remove it—each action writes to the database and redirects you back to the updated list.
 
 Prompt 10: “Write a Flask app called Joke Collector that integrates with the Official Joke API and a local SQLite database: on the homepage, display a list of all saved jokes (setup, punchline, optional user comment) with “Edit” and “Delete” links; include a “Fetch Random Joke” button that issues a GET to https://official-joke-api.appspot.com/random_joke, inserts the returned setup and punchline into your SQLite table, flashes a success message, and redirects back to the list; clicking “Edit” loads the joke into a form where you can add or modify your personal comment and save it back to the database; clicking “Delete” removes the joke after flashing a confirmation; ensure each CRUD operation commits instantly and uses Flask’s flash messaging for user feedback.
+
+
+
+prompt_id|build_status|config|
+1|success|0011|
+2|success|0011|
+3|fail|0011|
+4|fail|0011|
+5|fail|0011|
+6|success|0011|
+7|fail|0011|
+8|success|0011|
+9|success|0011|
+10|fail|0011|
