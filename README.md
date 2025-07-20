@@ -14,7 +14,7 @@ Our goal is to ensure the agent consistently delivers reliable, high-quality, an
 - Important to extract code out of log files.
 - It lives in the root directory with the name `code.ipynb`.
 - Behind the scene it uses another python script that has all the underlying code for extracting information out of log files.
-- This underlying python script is named as `extrac_log_data.py`.
+- This underlying python script is named as `extract_log_data.py`.
 
 #### 3. Evaluation results:
 - They live inside [`data/evaluations.csv`](data/evaluations.csv).
