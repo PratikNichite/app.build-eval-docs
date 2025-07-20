@@ -1,0 +1,20 @@
+prompt_id|user_prompt
+1|Create a simple web app called Plant Care Tracker that lets users track the condition of their plants using fun plant moods based on custom rule-based logic. Avoid using AI, ML, or external APIs.
+2|Create a Book Swap app where users can list books they want to swap, browse the available books, and request swaps with other members. Make reasonable assumptions about functionalities and appearance of the app and keep the app simple.
+3|Make a Roommate Chore Wheel that randomly assigns chores each week and tracks completion.
+4|Develop a Medical Clinic Inventory Manager web application. This app should feature a dashboard where clinic staff can upload CSV files containing medicine names, quantities, and expiry dates. The dashboard should then display the current inventory, allow for searching and filtering of medicines, and highlight items nearing their expiry date.
+5|Create a web app where users enter monthly income and expenses by category, and the app displays a pie chart of their spending.
+6|Create a web app where students post project ideas and recruit classmates to join based on skills.
+7|Create a web app that lets users upload a CSV file with student names and their field of interest (Machine Learning, SDE, Data Science, etc.). The app should randomly assign students into teams of 2 people grouped by field. Make assumptions and do not ask more questions.
+8|Build a dashboard to monitor car maintenance history and upcoming service dates.
+9|Make a simple marketplace for students to buy and sell used furniture.
+10|Create a web app where users can add, view, and manage saved passwords with a strength indicator that shows if each password is weak, medium, or strong based on length, complexity, and character variety.
+11|Build a simple web app that suggests if tomorrow's trip to a given city is a good idea, based on open-meteo API's weather forecast for that city
+12|Build a currency conversion app that takes an amount, source currency and target currency as input and converts it using the Frankfurter API
+13|Create a web app for managing a book library where users can add, view, update, and remove books, each with details like title, author, genre, and reading status. Include user-friendly forms, list views, and the ability to search or filter books.
+14|Develop a Team Task Manager: A collaborative app for teams to create, assign, and track tasks, with notifications and progress dashboards.
+15|Design a system for small businesses to manage product inventory, suppliers, and sales transactions. Include real-time stock updates, low-stock alerts, and sales analytics dashboards.
+16|Build a dashboard where users log sleep, work hours, social time, screen time, and emotional energy. Visualize patterns and suggest when to take breaks.
+17|Users input hours of sleep, stress levels, caffeine/alcohol intake—then get a daily "wellness score" with historical trends.
+18|Develop a scheduling app for individuals and service providers to book appointments, manage calendar availability, and send automated reminders. The app should support various appointment types such as consultations or meetings, and optionally integrate with external calendars. Include a user-friendly interface for both clients and providers.
+19|Develop a responsive web application that predicts the price of a refurbished(used) car based on user-provided input features. The app should accept at least 10 input features, including both numerical and categorical values, with appropriate input components (such as dropdowns, sliders, and text inputs). The app should also feature car image carousels on the main page, and allow users to save, edit, and delete their input data records via the UI.
