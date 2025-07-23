@@ -1,6 +1,6 @@
-,prompt_id,log_file,start_time,end_time,gen_time,build_status,post_build_error
-0,1,prompt_1.log,2025-07-15 17:59:33,2025-07-15 18:07:39,8min 06sec,success,False
-1,2,prompt_2.log,2025-07-15 21:09:07,2025-07-15 21:24:20,15min 13sec,success,False
-2,3,prompt_3.log,2025-07-15 21:40:43,2025-07-15 21:58:17,17min 34sec,success,False
-3,4,prompt_4.log,2025-07-15 23:30:09,2025-07-16 00:21:09,51min 00sec,success,False
-4,7,prompt_7.log,2025-07-17 09:13:40,2025-07-17 09:17:47,4min 07sec,fail,True
+prompt_id,log_file,start_time,end_time,gen_time,build_status,post_build_error,gemini_input_tokens,gemini_output_tokens,gemini_total_tokens,gemini_api_calls,anthropic_input_tokens,anthropic_output_tokens,anthropic_total_tokens,anthropic_api_calls,total_api_calls
+1,prompt_1.log,2025-07-22 12:37:47,2025-07-22 12:51:23,13min 36sec,success,False,28992,1008,30000,6,1138414,48205,1186619,69,75
+2,prompt_2.log,2025-07-22 21:51:03,2025-07-22 22:01:22,10min 19sec,success,False,27907,1054,28961,6,962959,33413,996372,61,67
+3,prompt_3.log,2025-07-23 11:00:35,2025-07-23 11:13:03,12min 28sec,success,False,22660,950,23610,6,1251805,37280,1289085,109,115
+4,prompt_4.log,2025-07-23 13:51:44,2025-07-23 13:59:35,7min 51sec,success,False,22832,1022,23854,6,403567,21777,425344,45,51
+5,prompt_5.log,2025-07-23 05:41:25,2025-07-23 05:51:04,9min 39sec,success,False,19322,1043,20365,6,513263,23001,536264,66,72
