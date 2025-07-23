@@ -1,5 +1,6 @@
 prompt_id,log_file,start_time,end_time,gen_time,gen_time_seconds,execution_aborted,build_status,post_build_error,gemini_input_tokens,gemini_output_tokens,gemini_total_tokens,gemini_api_calls,anthropic_input_tokens,anthropic_output_tokens,anthropic_total_tokens,anthropic_api_calls,total_api_calls
 1,prompt_1.log,2025-07-22 12:37:47,2025-07-22 12:51:23,13min 36sec,816,False,success,False,28992,1008,30000,6,1138414,48205,1186619,69,75
+10,prompt_10.log,2025-07-23 22:01:39,2025-07-23 22:08:53,7min 14sec,434,False,success,False,19042,879,19921,6,304812,18387,323199,42,48
 11,prompt_11.log,2025-07-23 17:47:34,2025-07-23 18:03:40,16min 06sec,966,True,fail,False,4035,614,4649,4,3968452,51378,4019830,122,126
 12,prompt_12.log,2025-07-23 18:41:33,2025-07-23 18:55:22,13min 49sec,829,False,success,False,21716,1436,23152,6,1369392,55787,1425179,85,91
 13,prompt_13.log,2025-07-23 18:59:29,2025-07-23 19:04:30,5min 01sec,301,False,success,False,14930,714,15644,6,222101,12327,234428,41,47
@@ -9,3 +10,7 @@ prompt_id,log_file,start_time,end_time,gen_time,gen_time_seconds,execution_abort
 3,prompt_3.log,2025-07-23 11:00:35,2025-07-23 11:13:03,12min 28sec,748,False,success,False,22660,950,23610,6,1251805,37280,1289085,109,115
 4,prompt_4.log,2025-07-23 13:51:44,2025-07-23 13:59:35,7min 51sec,471,False,success,False,22832,1022,23854,6,403567,21777,425344,45,51
 5,prompt_5.log,2025-07-23 05:41:25,2025-07-23 05:51:04,9min 39sec,579,False,success,False,19322,1043,20365,6,513263,23001,536264,66,72
+6,prompt_6.log,2025-07-23 20:42:13,2025-07-23 20:51:24,9min 11sec,551,False,success,False,20048,872,20920,6,698631,30699,729330,59,65
+7,prompt_7.log,2025-07-23 21:09:13,2025-07-23 21:20:05,10min 52sec,652,False,success,False,23388,624,24012,6,1013475,26529,1040004,70,76
+8,prompt_8.log,2025-07-23 21:24:27,2025-07-23 21:40:09,15min 42sec,942,False,success,False,34295,1072,35367,7,2875965,56271,2932236,102,109
+9,prompt_9.log,2025-07-23 21:45:09,2025-07-23 21:57:51,12min 42sec,762,False,success,False,27276,1108,28384,6,1363707,45636,1409343,66,72
