@@ -88,7 +88,7 @@ class LogExtractor:
             end_dt = datetime.strptime(end_time, fmt)
             duration = end_dt - start_dt
             minutes, seconds = divmod(int(duration.total_seconds()), 60)
-            return f"{minutes}min {seconds:02d}sec"
+            return f"{minutes}min {seconds:02d}sec", int(duration.total_seconds())
         except Exception as e:
             print(f"Warning: Could not calculate duration: {e}")
             return None
@@ -113,15 +113,14 @@ class LogExtractor:
         start_time = timestamps[0]['timestamp']
         end_time = timestamps[-1]['timestamp']
         
-        print(end_time)
-        
-        duration = self._calculate_duration(start_time, end_time)
+        duration, duration_seconds = self._calculate_duration(start_time, end_time)
         build_status = 'success' if deployed and not post_build_error else 'fail'
 
         return {
             'start_time': start_time,
             'end_time': end_time,
             'duration': duration,
+            'duration_seconds': duration_seconds,
             'build_status': build_status,
             'post_build_error': post_build_error,
             'token_data': token_data
@@ -184,6 +183,8 @@ def process_folder_logs(source_folder: str, destination_folder: Optional[str]) -
             'start_time': log_data['start_time'],
             'end_time': log_data['end_time'],
             'gen_time': log_data['duration'],
+            'gen_time_seconds': log_data['duration_seconds'],
+            'execution_aborted': log_data['duration_seconds'] >= 900 and log_data['build_status'] != "success",  # threshold of 15 minutes
             'build_status': log_data['build_status'],
             'post_build_error': log_data['post_build_error'],
         }
