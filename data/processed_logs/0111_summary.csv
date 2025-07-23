@@ -1,6 +1,10 @@
 prompt_id,log_file,start_time,end_time,gen_time,gen_time_seconds,execution_aborted,build_status,post_build_error,gemini_input_tokens,gemini_output_tokens,gemini_total_tokens,gemini_api_calls,anthropic_input_tokens,anthropic_output_tokens,anthropic_total_tokens,anthropic_api_calls,total_api_calls
 1,prompt_1.log,2025-07-22 12:37:47,2025-07-22 12:51:23,13min 36sec,816,False,success,False,28992,1008,30000,6,1138414,48205,1186619,69,75
 11,prompt_11.log,2025-07-23 17:47:34,2025-07-23 18:03:40,16min 06sec,966,True,fail,False,4035,614,4649,4,3968452,51378,4019830,122,126
+12,prompt_12.log,2025-07-23 18:41:33,2025-07-23 18:55:22,13min 49sec,829,False,success,False,21716,1436,23152,6,1369392,55787,1425179,85,91
+13,prompt_13.log,2025-07-23 18:59:29,2025-07-23 19:04:30,5min 01sec,301,False,success,False,14930,714,15644,6,222101,12327,234428,41,47
+14,prompt_14.log,2025-07-23 19:08:08,2025-07-23 19:27:35,19min 27sec,1167,True,fail,False,3804,532,4336,4,4428049,49425,4477474,131,135
+15,prompt_15.log,2025-07-23 19:39:04,2025-07-23 19:57:32,18min 28sec,1108,True,fail,False,3723,382,4105,4,5409317,68921,5478238,118,122
 2,prompt_2.log,2025-07-22 21:51:03,2025-07-22 22:01:22,10min 19sec,619,False,success,False,27907,1054,28961,6,962959,33413,996372,61,67
 3,prompt_3.log,2025-07-23 11:00:35,2025-07-23 11:13:03,12min 28sec,748,False,success,False,22660,950,23610,6,1251805,37280,1289085,109,115
 4,prompt_4.log,2025-07-23 13:51:44,2025-07-23 13:59:35,7min 51sec,471,False,success,False,22832,1022,23854,6,403567,21777,425344,45,51
