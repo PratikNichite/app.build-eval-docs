@@ -25,9 +25,8 @@ Our goal is to ensure the agent consistently delivers reliable, high-quality, an
 #### 4. Evaluation results:
 - They live inside [`data/evaluations.csv`](data/evaluations.csv).
 
-#### 5. Temp Folders:
-- This folder [`temp_folders`](temp_folders) contains all the zipped files of the generated application, including organized source code, dependencies, and tests.
-- It includes Dockerfile, docker-compose.yml, pytest configuration, and a README for easy deployment and testing.
+#### 5. Generated Code:
+- This folder [`generated_code`](data/generated_code) contains all the zipped files of the generated application, including organized source code, dependencies, and tests.
 
 
 
